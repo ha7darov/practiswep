@@ -1,0 +1,64 @@
+.headerTop{
+    width: 100%;
+    height: 80px;
+    img{
+        width: 64px;
+        height: 32px;
+        // vertical-align: middle;
+        // margin-top: 20px;
+        padding-left: 25px;
+        padding-top: 25px;
+        cursor: pointer;
+        margin-left: 5%;
+    }
+    .fa-bars{
+        cursor: pointer;
+        font-size: 24px;
+        width: 24px;
+        height: 21px;
+        margin-left: 75%;
+    }
+    .fa-bars:hover{
+        color: rgb(255, 0, 255);
+    }  
+}
+// !============ Bar Click =============
+#list {
+    display: none;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .right-burger-menu {
+    background: rgba(0, 0, 0, 0.956);
+    width: 250px;
+    height: 715px;
+    margin-left: -42px;
+    margin-top: -92px;
+    animation-name: home-go;
+    animation-duration: 0.7s;
+    @keyframes home-go {
+        0% {
+          margin-left: -182px;
+        }
+        100% {
+          margin-left: -41px;
+        }
+      }
+      .home {
+        text-decoration: none;
+        user-select: none;
+        color: #fff;
+        font-size: 20px;
+        font-family: Open Sans, sans-serif;
+        /* margin-top: 300px; */
+        position: relative;
+        top: 120px;
+        left: 90px;
+      }
+      
+      .home:hover {
+        color: rgba(255, 255, 255, 0.5450980392);
+      }
+      
+  }

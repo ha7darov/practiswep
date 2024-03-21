@@ -43,6 +43,46 @@ body {
   color: rgb(255, 0, 255);
 }
 
+#list {
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+
+.right-burger-menu {
+  background: rgba(0, 0, 0, 0.956);
+  width: 250px;
+  height: 715px;
+  margin-left: -42px;
+  margin-top: -92px;
+  animation-name: home-go;
+  animation-duration: 0.7s;
+}
+@keyframes home-go {
+  0% {
+    margin-left: -182px;
+  }
+  100% {
+    margin-left: -41px;
+  }
+}
+.right-burger-menu .home {
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Open Sans, sans-serif;
+  /* margin-top: 300px; */
+  position: relative;
+  top: 120px;
+  left: 90px;
+}
+.right-burger-menu .home:hover {
+  color: rgba(255, 255, 255, 0.5450980392);
+}
+
 .libraryLanding {
   background-image: url(../img/section-1/bg.jpg);
   background-repeat: no-repeat;

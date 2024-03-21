@@ -20,7 +20,10 @@ html(lang="en")
         header.headerTop  
             a(href="") 
                 img(src="../img/logo.png", alt="logo")
-            i.fa.fa-bars
+            i( onclick="hide('list')" ).fa.fa-bars
+            ul#list 
+                div.right-burger-menu
+                    a.home(href="./index.html") home
         section.libraryLanding
             div.libraryLanding__grid
                 div.libraryLanding-grid__pack
@@ -30,6 +33,7 @@ html(lang="en")
                     p.libraryLanding-grid-pack Images from 
                         a(href="") Freepik 
                 div.libraryLanding-grid__pack-second
+        script(src="../js/header-bar.js") 
                 
                 
             
