@@ -12,4 +12,10 @@ body {
 *::selection {
   color: #fff;
   background-color: greenyellow;
+}
+
+.container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
 }/*# sourceMappingURL=main.css.map */
