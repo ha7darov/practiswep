@@ -43,6 +43,65 @@ body {
   color: rgb(255, 0, 255);
 }
 
+.libraryLanding {
+  background-image: url(../img/section-1/bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.libraryLanding .libraryLanding__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack {
+  width: 200px;
+  padding: 40px 0px 40px 20%;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__h1 {
+  padding-top: 50px;
+  font: 700 48px Raleway, sans-serif;
+  color: #fff;
+  width: 250px;
+  height: 105px;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__p {
+  width: 288px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Raleway, sans-serif;
+  color: #fff;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__btn {
+  width: 212px;
+  height: 57.6px;
+  border: none;
+  border-radius: 12px;
+  font: 700 16px "Open Sans", sans-serif;
+  background-color: #d5e76c;
+  cursor: pointer;
+  color: #2799b1;
+  text-transform: uppercase;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__btn:hover {
+  background-color: rgba(213, 231, 108, 0.8549019608);
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack {
+  font: 16px "Open Sans", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack a:hover {
+  border-color: rgba(255, 255, 255, 0.516);
+  color: rgba(255, 255, 255, 0.734);
+}
+
 @media only screen and (max-width: 754px) {
   .fa-bars {
     position: relative;

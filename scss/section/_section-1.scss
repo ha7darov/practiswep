@@ -21,12 +21,73 @@
     }
     .fa-bars:hover{
         color: rgb(255, 0, 255);
-    }
-    
+    }  
 }
-@media only screen and (max-width: 754px) {
-    .fa-bars{
-        position: relative;
-        top: -30px;
+.libraryLanding{
+    background-image: url(../img/section-1/bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: max-content;
+    .libraryLanding__grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        .libraryLanding-grid__pack{
+            width: 200px;
+            // width: 351px;
+            // height: 105px;
+            padding: 40px 0px 40px 20%;
+            // background-color: red;
+            .libraryLanding-grid-pack__h1{
+                padding-top: 50px;
+                font: 700 48px $Font-Raleway;
+                color: $text-f-color;
+                width: 250px;
+                height: 105px;
+            }
+            .libraryLanding-grid-pack__p{
+                width: 288px;
+                font-weight: 700;
+                font-size: 16px;
+                font-family: $Font-Raleway;
+                color: $text-f-color;
+            }
+            .libraryLanding-grid-pack__btn{
+                width: 212px;
+                height: 57.6px;
+                border: none;
+                border-radius: 12px;
+                font: 700 16px $Open-sans ;
+                background-color: $some-btn-bg-colors;
+                cursor: pointer;
+                color: $some-text;
+                text-transform: uppercase;
+            }
+            .libraryLanding-grid-pack__btn:hover{
+                background-color: $btn-hovers;
+            }
+            .libraryLanding-grid-pack{
+                font: 16px $Open-sans;
+                color: $text-f-color;
+                padding-top: 20px;
+                padding-bottom: 60px;
+                a{
+                    color: $text-f-color;
+                    text-decoration: none;
+                    border-bottom: 2px solid $text-f-color;
+                }
+                a:hover{
+                    border-color: rgba(255, 255, 255, 0.516);
+                    color: rgba(255, 255, 255, 0.734);
+                }
+            }
+        }
     }
+    // .libraryLanding-grid__pack-second{
+    //     background-image: url(../img/section-1/div-bg.png);
+    //     background-size: cover;
+    //     background-position: 50% 50%;
+    //     position: relative;
+    //     z-index: 11;
+    // }
 }
+
