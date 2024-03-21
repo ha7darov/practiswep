@@ -2,4 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*::-moz-selection {
+  color: #fff;
+  background-color: greenyellow;
+}
+
+*::selection {
+  color: #fff;
+  background-color: greenyellow;
 }/*# sourceMappingURL=main.css.map */
