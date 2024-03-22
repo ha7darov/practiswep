@@ -9,9 +9,7 @@
     height: max-content;
     .libraryLanding__grid {
         overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include for-flex;
         .libraryLanding-grid__pack {
             z-index: 2;
             width: 200px;
