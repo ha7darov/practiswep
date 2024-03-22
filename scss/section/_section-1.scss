@@ -1,69 +1,80 @@
 // !============ Library Page ============
-.libraryLanding{
+.libraryLanding {
     background-image: url(../img/section-1/bg.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
     width: 100%;
     height: max-content;
-    .libraryLanding__grid{
-        display: grid;
-        grid-template-columns: auto auto;
-        .libraryLanding-grid__pack{
+    .libraryLanding__grid {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .libraryLanding-grid__pack {
+            z-index: 2;
             width: 200px;
             // width: 351px;
             // height: 105px;
-            padding: 40px 0px 40px 20%;
+            padding: 40px 0px 40px 17%;
             // background-color: red;
-            .libraryLanding-grid-pack__h1{
+            .libraryLanding-grid-pack__h1 {
                 padding-top: 50px;
                 font: 700 48px $Font-Raleway;
                 color: $text-f-color;
                 width: 250px;
                 height: 105px;
             }
-            .libraryLanding-grid-pack__p{
+            .libraryLanding-grid-pack__p {
                 width: 288px;
                 font-weight: 700;
                 font-size: 16px;
                 font-family: $Font-Raleway;
                 color: $text-f-color;
             }
-            .libraryLanding-grid-pack__btn{
+            .libraryLanding-grid-pack__btn {
                 width: 212px;
                 height: 57.6px;
                 border: none;
                 border-radius: 12px;
-                font: 700 16px $Open-sans ;
+                font: 700 16px $Open-sans;
                 background-color: $some-btn-bg-colors;
                 cursor: pointer;
                 color: $some-text;
                 text-transform: uppercase;
             }
-            .libraryLanding-grid-pack__btn:hover{
+            .libraryLanding-grid-pack__btn:hover {
                 background-color: $btn-hovers;
             }
-            .libraryLanding-grid-pack{
+            .libraryLanding-grid-pack {
                 font: 16px $Open-sans;
                 color: $text-f-color;
                 padding-top: 20px;
                 padding-bottom: 60px;
-                a{
+                a {
                     color: $text-f-color;
                     text-decoration: none;
                     border-bottom: 2px solid $text-f-color;
                 }
-                a:hover{
+                a:hover {
                     border-color: rgba(255, 255, 255, 0.516);
                     color: rgba(255, 255, 255, 0.734);
                 }
             }
         }
+        .libraryLanding-grid__pack-second {
+            display: block;
+            .libraryLanding-grid__pack-second_1 {
+                border: 0px solid transparent;
+                width: calc(((100% - 1140px) / 2) + 1140px);
+                img {
+                    width: calc(((100% - 1140px) / 2) + 1140px);
+                    max-width: 100%;
+                    margin: 0 0 0 auto;
+                    width: 100%;
+                }
+            }
+        }
     }
-    // .libraryLanding-grid__pack-second{
-    //     background-image: url(../img/section-1/div-bg.png);
-    //     background-size: cover;
-    //     background-position: 50% 50%;
-    //     position: relative;
-    //     z-index: 11;
-    // }
 }
-

@@ -86,17 +86,23 @@ body {
 .libraryLanding {
   background-image: url(../img/section-1/bg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
   width: 100%;
   height: -moz-max-content;
   height: max-content;
 }
 .libraryLanding .libraryLanding__grid {
-  display: grid;
-  grid-template-columns: auto auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack {
+  z-index: 2;
   width: 200px;
-  padding: 40px 0px 40px 20%;
+  padding: 40px 0px 40px 17%;
 }
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__h1 {
   padding-top: 50px;
@@ -141,10 +147,28 @@ body {
   border-color: rgba(255, 255, 255, 0.516);
   color: rgba(255, 255, 255, 0.734);
 }
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack-second {
+  display: block;
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack-second .libraryLanding-grid__pack-second_1 {
+  border: 0px solid transparent;
+  width: calc((100% - 1140px) / 2 + 1140px);
+}
+.libraryLanding .libraryLanding__grid .libraryLanding-grid__pack-second .libraryLanding-grid__pack-second_1 img {
+  width: calc((100% - 1140px) / 2 + 1140px);
+  max-width: 100%;
+  margin: 0 0 0 auto;
+  width: 100%;
+}
 
 @media only screen and (max-width: 754px) {
   .fa-bars {
     position: relative;
     top: -30px;
+  }
+}
+@media (max-width: 1110px) {
+  .libraryLanding__grid {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */
