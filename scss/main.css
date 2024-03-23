@@ -110,6 +110,16 @@ body {
   color: #fff;
   width: 250px;
   height: 105px;
+  animation-name: h1-anim;
+  animation-duration: 2s;
+}
+@keyframes h1-anim {
+  from {
+    margin-left: -300px;
+  }
+  to {
+    margin-left: 0;
+  }
 }
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__p {
   width: 288px;
@@ -117,6 +127,9 @@ body {
   font-size: 16px;
   font-family: Raleway, sans-serif;
   color: #fff;
+  font-style: italic;
+  animation-name: go-top-anim;
+  animation-duration: 2s;
 }
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__btn {
   width: 212px;
@@ -128,6 +141,8 @@ body {
   cursor: pointer;
   color: #2799b1;
   text-transform: uppercase;
+  animation-name: go-top-anim;
+  animation-duration: 2s;
 }
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack__btn:hover {
   background-color: rgba(213, 231, 108, 0.8549019608);
@@ -137,6 +152,8 @@ body {
   color: #fff;
   padding-top: 20px;
   padding-bottom: 60px;
+  animation-name: go-top-anim;
+  animation-duration: 2s;
 }
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack a {
   color: #fff;
@@ -146,6 +163,14 @@ body {
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack .libraryLanding-grid-pack a:hover {
   border-color: rgba(255, 255, 255, 0.516);
   color: rgba(255, 255, 255, 0.734);
+}
+@keyframes go-top-anim {
+  from {
+    margin-top: 300px;
+  }
+  to {
+    margin-top: 0;
+  }
 }
 .libraryLanding .libraryLanding__grid .libraryLanding-grid__pack-second {
   display: block;
